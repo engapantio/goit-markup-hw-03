@@ -1,0 +1,147 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #fff;
+  line-height: 21px;
+}
+
+.object {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  color: #404bbf;
+}
+
+.top-line {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-left: 156px;
+  color: #4d5ae5;
+}
+
+.studio-top {
+  color: #2e2f42;
+}
+
+.menu {
+  font-weight: 500;
+}
+
+.menu .link {
+  color: #2e2f42;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  color: #404bbf;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contact-link {
+  color: #434455;
+}
+
+.hero-image {
+  background-color: #2e2f42;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+.btn {
+  background: #4d5ae5;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  margin-left: 636px;
+  margin-bottom: 188px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #404bbf;
+}
+
+.sub-headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+
+.our-values {
+  visibility: hidden;
+}
+
+.value,
+.staff-member,
+.project {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.value-descr,
+.staff-title,
+.project-type,
+.slogan {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.staff {
+  background-color: #f4f4fd;
+}
+
+.staff-card {
+  background-color: #fff;
+  text-align: center;
+}
+
+.page-ending {
+  background-color: #2e2f42;
+}
+
+.studio-bottom {
+  color: #f4f4fd;
+}
+
+.slogan {
+  color: #f4f4fd;
+}
