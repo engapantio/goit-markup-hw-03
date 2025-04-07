@@ -19,10 +19,53 @@ body {
   color: #404bbf;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+.container {
+  width: 1158px;
+  max-width: 1440px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 156px;
+  margin-right: 156px;
+  box-sizing: border-box;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .top-line {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.top-line .container {
+  display: flex;
+}
+.navigation {
+  display: flex;
+  padding: 24px 0;
 }
 
 .logo {
@@ -32,8 +75,11 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-left: 156px;
   color: #4d5ae5;
+  display: flex;
+  align-items: center;
+
+  margin-right: 76px;
 }
 
 .studio-top {
@@ -42,6 +88,8 @@ body {
 
 .menu {
   font-weight: 500;
+  display: flex;
+  gap: 40px;
 }
 
 .menu .link {
@@ -54,15 +102,26 @@ body {
 }
 
 .contacts {
+  padding: 24px 0;
+}
+
+.contacts ul {
   font-style: normal;
+  display: flex;
+  gap: 40px;
+  padding-left: 332px;
 }
 
 .contact-link {
-  color: #434455;
+  color: #b6b7bb;
 }
 
 .hero-image {
   background-color: #2e2f42;
+}
+
+.hero-image > .container {
+  width: 1440px;
 }
 
 .headline {
@@ -72,6 +131,10 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-left: calc(472px - 156px);
+  margin-right: calc(472px - 156px);
+  padding-top: calc(188px - 120px);
+  width: 496px;
 }
 
 .btn {
@@ -83,8 +146,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  margin-left: 636px;
-  margin-bottom: 188px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin: 48px calc(635px - 156px) calc(188px - 120px) calc(636px - 156px);
 }
 
 .btn:hover,
@@ -92,6 +158,9 @@ body {
   background-color: #404bbf;
 }
 
+.values {
+  padding-top: calc(120px - 39.95px);
+}
 .sub-headline {
   font-weight: 700;
   font-size: 36px;
@@ -104,6 +173,19 @@ body {
 
 .our-values {
   visibility: hidden;
+}
+
+.values ul {
+  display: flex;
+  gap: 24px;
+}
+
+.values object {
+  width: calc((100% / 4) - 24px);
+}
+
+.value {
+  margin-bottom: 8px;
 }
 
 .value,
