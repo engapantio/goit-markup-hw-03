@@ -107,7 +107,6 @@ img {
 }
 
 .contacts {
-  padding: 24px 0;
   margin-left: 332px;
 }
 
@@ -118,6 +117,7 @@ img {
 }
 
 .contact-link {
+  padding: 24px 0;
   color: #b6b7bb;
 }
 
