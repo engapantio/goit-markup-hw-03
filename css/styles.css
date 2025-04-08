@@ -37,21 +37,18 @@ ul {
 img {
   display: block;
   max-width: 100%;
-  object-fit: cover;
-}
-
-.container {
-  width: 1158px;
-  max-width: 1440px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 156px;
-  margin-right: 156px;
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0 120px 0;
+}
+.container {
+  width: 1158px;
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .top-line {
@@ -68,6 +65,7 @@ img {
 .navigation {
   display: flex;
   padding: 24px 0;
+  align-items: center;
 }
 
 .logo {
@@ -80,6 +78,7 @@ img {
   color: #4d5ae5;
   display: flex;
   align-items: center;
+  margin-right: 76px;
 }
 
 .studio-top {
@@ -91,7 +90,7 @@ img {
   display: flex;
   gap: 40px;
   width: 261px;
-  margin-left: 76px;
+  padding: 24px 0;
 }
 .menu .object {
   width: calc((261px - 80px) / 3);
@@ -110,7 +109,7 @@ img {
   margin-left: 332px;
 }
 
-.contacts ul {
+.contact-types {
   font-style: normal;
   display: flex;
   gap: 40px;
@@ -120,7 +119,7 @@ img {
   color: #b6b7bb;
 }
 
-.contacts .object:first-child {
+.contact-types .object:first-child {
   width: 153px;
 }
 
@@ -130,6 +129,7 @@ img {
 
 .hero-image {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .headline {
@@ -142,12 +142,13 @@ img {
   margin-left: calc(472px - 156px);
   margin-right: calc(472px - 156px);
   padding-top: calc(188px - 120px);
-
-  width: 496px;
+  max-width: 496px;
 }
 
 .btn {
   background: #4d5ae5;
+  border: none;
+  display: block;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -158,6 +159,8 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
   box-sizing: content-box;
+  min-width: 169px;
+  height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   margin: 48px calc(635px - 156px) calc(188px - 120px) calc(636px - 156px);
 }
@@ -168,7 +171,7 @@ img {
 }
 
 .values {
-  padding-top: calc(120px - 39.95px);
+  padding: 120px 0;
 }
 .sub-headline {
   font-weight: 700;
@@ -180,17 +183,25 @@ img {
   text-transform: capitalize;
 }
 
-.our-values {
-  visibility: hidden;
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 
-.values ul {
+.our-values {
   display: flex;
   gap: 24px;
 }
 
-.values object {
-  width: calc((100% / 4) - 24px);
+.our-values .object {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .value {
@@ -198,7 +209,7 @@ img {
 }
 
 .value,
-.staff-member,
+.staff-name,
 .project {
   font-weight: 500;
   font-size: 20px;
@@ -222,7 +233,7 @@ img {
 
 .staff .container,
 .portfolio .container {
-  width: 1128px;
+  width: 1158px;
 }
 
 .staff .sub-headline,
@@ -230,10 +241,13 @@ img {
   margin-bottom: 72px;
 }
 
-.staff ul,
-.portfolio ul {
+.staff-list {
   display: flex;
   gap: 24px;
+}
+
+.staff-member {
+  padding: 32px 0;
 }
 
 .staff-card {
@@ -244,44 +258,57 @@ img {
   width: calc((100% - 3 * 24px) / 4);
 }
 
-.staff-member,
-.project {
-  margin: 32px auto 8px;
+.staff-name {
+  margin-bottom: 8px;
+  text-align: center;
 }
 
-.portfolio ul {
+.staff-title {
+  text-align: center;
+}
+
+.portfolio-list {
+  display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
+  column-gap: 24px;
 }
 
 .portfolio-card {
-  width: calc((200% - 5 * 24px) / 6);
+  width: calc((100% - 48px) / 3);
   padding-bottom: 32px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  margin-bottom: 48px;
 }
 
 .portfolio-card:nth-child(4) {
-  margin-top: 24px;
+  margin-bottom: 0;
 }
 
 .portfolio-card:nth-child(5) {
-  margin-top: 24px;
+  margin-bottom: 0;
 }
 
 .portfolio-card:last-child {
-  margin-top: 24px;
+  margin-bottom: 0;
 }
 
-.project,
-.project-type {
-  padding-left: 16px;
+.project-card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.project {
+  margin-bottom: 8px;
 }
 
 .page-ending {
   background-color: #2e2f42;
   padding: 100px 0;
+}
+
+.page-ending .link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .studio-bottom {
@@ -291,5 +318,4 @@ img {
 .slogan {
   color: #f4f4fd;
   width: 264px;
-  margin-top: 16px;
 }
