@@ -60,6 +60,8 @@ img {
 
 .top-line .container {
   display: flex;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .navigation {
@@ -125,6 +127,7 @@ img {
 
 .contacts .object:last-child {
   width: 151px;
+  margin-right: 0;
 }
 
 .hero-image {
