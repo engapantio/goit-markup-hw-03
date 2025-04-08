@@ -95,10 +95,10 @@ img {
 }
 .menu .object {
   width: calc((261px - 80px) / 3);
-  padding: 24px 0;
 }
 .menu .link {
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .menu .link:hover,
@@ -186,8 +186,17 @@ img {
   text-transform: capitalize;
 }
 
-.hidden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .our-values {
