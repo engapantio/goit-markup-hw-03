@@ -92,10 +92,10 @@ img {
   display: flex;
   gap: 40px;
   width: 261px;
-  padding: 24px 0;
 }
 .menu .object {
   width: calc((261px - 80px) / 3);
+  padding: 24px 0;
 }
 .menu .link {
   color: #2e2f42;
@@ -187,15 +187,7 @@ img {
 }
 
 .hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
+  display: none;
 }
 
 .our-values {
