@@ -44,7 +44,6 @@ img {
 }
 .container {
   width: 1158px;
-  max-width: 1440px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -118,7 +117,7 @@ img {
 
 .contact-link {
   padding: 24px 0;
-  color: #b6b7bb;
+  color: #2e2f42;
 }
 
 .contact-types .object:first-child {
@@ -142,9 +141,8 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-left: calc(472px - 156px);
-  margin-right: calc(472px - 156px);
-  padding-top: calc(188px - 120px);
+  margin-left: auto;
+  margin-right: auto;
   max-width: 496px;
 }
 
@@ -160,12 +158,11 @@ img {
   letter-spacing: 0.04em;
   cursor: pointer;
   border-radius: 4px;
-  padding: 16px 32px;
   box-sizing: content-box;
   min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin: 48px calc(635px - 156px) calc(188px - 120px) calc(636px - 156px);
+  margin: 48px auto 0;
 }
 
 .btn:hover,
@@ -235,11 +232,6 @@ img {
   background-color: #f4f4fd;
 }
 
-.staff .container,
-.portfolio .container {
-  width: 1158px;
-}
-
 .staff .sub-headline,
 .portfolio .sub-headline {
   margin-bottom: 72px;
@@ -258,7 +250,6 @@ img {
   background-color: #fff;
   text-align: center;
   border-radius: 0 0 4px 4px;
-  padding-bottom: 32px;
   width: calc((100% - 3 * 24px) / 4);
 }
 
@@ -275,24 +266,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-card {
   width: calc((100% - 48px) / 3);
-  padding-bottom: 32px;
-  margin-bottom: 48px;
-}
-
-.portfolio-card:nth-child(4) {
-  margin-bottom: 0;
-}
-
-.portfolio-card:nth-child(5) {
-  margin-bottom: 0;
-}
-
-.portfolio-card:last-child {
-  margin-bottom: 0;
 }
 
 .project-card {
@@ -313,6 +291,18 @@ img {
 .page-ending .link {
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.logo-lower {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: flex;
+  align-items: center;
 }
 
 .studio-bottom {
